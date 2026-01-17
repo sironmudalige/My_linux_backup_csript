@@ -1,16 +1,24 @@
-# Linux Backup Automation Script
+# Linux dockerized Backup Automation Script
 
-This project contains a simple Bash script to automate directory backups on Linux systems.
+This project demonstrates how to automate directory backups using a bash script running inside a container.
 
 ## Features
-- Accepts a directory path as input
-- Creates a compressed `.tar.gz` backup
-- Adds timestamp to backup name
-- Basic error handling
-- Store logs about the script
-- Able to run the system in a different machine by sharing the image that created
+- Uses docker for a consistant environment
+- Uses volumes to access host files
+- Creates compressed '.tar.gz' backups
+- Container is removed after execution
+
+## Requirements
+- Docker
+- Linux/WSL
+
+# How it works
+- Host directory is mounted in to the container
+- Backup is created using 'tar'
+- Backup file is saved back to the host
 
 ## Usage
+
+Build the Docker image:
 ```bash
-chmod +x backup.sh
-./backup.sh /path/to/directory
+docker build -t siron-backup .
