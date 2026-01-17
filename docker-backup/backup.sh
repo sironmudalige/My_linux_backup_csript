@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOURCE_DIR="$1"
-BACKUP_DIR="$HOME/devops-lab/project_1/backups"
+SOURCE_DIR="/data"
+BACKUP_DIR="/backup"
 
 mkdir -p "$BACKUP_DIR"
 
