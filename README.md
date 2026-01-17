@@ -8,6 +8,7 @@ This project contains a simple Bash script to automate directory backups on Linu
 - Adds timestamp to backup name
 - Basic error handling
 - Store logs about the script
+- Able to run the system in a different machine by sharing the image that created
 
 ## Usage
 ```bash
