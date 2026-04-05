@@ -17,8 +17,4 @@ This project demonstrates how to automate directory backups using a bash script 
 - Backup is created using 'tar'
 - Backup file is saved back to the host
 
-## Usage
 
-Build the Docker image:
-```bash
-docker build -t siron-backup .
